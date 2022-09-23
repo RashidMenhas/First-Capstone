@@ -1,0 +1,461 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  background-image: url('images/about_bg_01.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.nav-header {
+  display: none;
+}
+
+.nav-header2 ul {
+  display: none;
+}
+
+.nav-header2 .logo {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.music-section {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 50px 50px 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 35px;
+  color: #ec5242;
+  text-align: center;
+}
+
+.pragraph {
+  text-align: center;
+  width: 100%;
+  margin-top: 17px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  background: #f5f5f5;
+  padding: 28px;
+  color: #271a31;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.per-email {
+  margin-top: 15px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #271a31;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.linke {
+  color: #271a31;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pragraph2 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #2c2828;
+}
+
+.festival {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.festival h2 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #271a31;
+}
+
+.hr {
+  background-color: #ec5242;
+  width: 100px;
+  height: 4px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.festdesc {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #271a31;
+}
+
+.hr1 {
+  background-color: #c9c9c9;
+  width: 100%;
+  height: 2px;
+}
+
+.past-events {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-items: center;
+}
+
+.past-events h2 {
+  width: 90%;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+
+  /* padding: 0.3em 0.1em; */
+  color: #271a31;
+  margin-top: 33px;
+  text-align: center;
+}
+
+.p-event-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.enim-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.sub-enim-card {
+  width: 330px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(252, 0, 0, 0.7)), url(images/hands-up.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sub-enim-card h3 {
+  color: #fff;
+  font-size: 40px;
+}
+
+.sub-enim-card p {
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer-about {
+  height: auto;
+  width: 100%;
+  background: #141414;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 50px;
+}
+
+.about-img-logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.par {
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+  font-size: 12px;
+  margin-left: 8%;
+}
+
+
+
+
+/* **************************************************************************************************** */
+@media only screen and (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 20px;
+    padding: 10px;
+    background: #2c2828;
+  }
+
+  .nav-header ul {
+    margin-right: 8%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-header a {
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .nav-header2 {
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+  }
+
+  .nav-header2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav-header2 .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin: 18px 80px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .nav-header2 ul li {
+    font-size: 15px;
+    color: unset;
+    text-align: center;
+  }
+
+  .nav-header2 ul li a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  .booktick {
+    border: 2px solid #ec5242;
+    padding: 5px;
+  }
+
+  .music-section {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 50px 50px 40px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 176px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    color: #ec5242;
+    text-align: center;
+  }
+
+  .pragraph {
+    text-align: center;
+    width: 60vw;
+    margin-top: 30px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    padding: 40px;
+    color: #271a31;
+    line-height: 25px;
+  }
+
+  .per-email {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #271a31;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .linke {
+    color: #271a31;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .pragraph2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2c2828;
+  }
+
+  .festival {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .festival h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #271a31;
+    margin-top: 150px;
+  }
+
+  .hr {
+    background-color: #ec5242;
+    width: 100px;
+    height: 4px;
+    margin-top: 30px;
+  }
+
+  .festdesc {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #271a31;
+    font-size: 14px;
+  }
+
+  .hr1 {
+    background-color: #c9c9c9;
+    width: 100%;
+    height: 2px;
+  }
+
+  .past-events {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .past-events h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #271a31;
+    margin-top: 50px;
+  }
+
+  .p-event-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enim-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .sub-enim-card {
+    width: 367px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 0, 0, 0.7), rgba(252, 0, 0, 0.7)), url(images/hands-up.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sub-enim-card h3 {
+    color: #fff;
+    font-size: 40px;
+  }
+
+  .sub-enim-card p {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .footer-about {
+    width: 100%;
+    height: 300px;
+    background: #141414;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
+  .about-img-logo {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: 80px;
+  }
+
+  .par {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+}
