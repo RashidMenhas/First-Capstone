@@ -27,18 +27,18 @@
         </div>
         <nav class="nav">
             <div class="nav-header2">
-                <i class="menu fa-sharp fa-solid fa-bars"></i>
+                <i id="menu" class="menu fa-sharp fa-solid fa-bars"></i>
                 <label class="logo">
                     <h3>SoundHound</h3>
                     <h2>Music Fest</h2>
                 </label>
-                <ul>
-                    <li><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
+                <ul id="menu-icon">
+                    <li class="cross-icon"><i id="cross-icon" class="cross fa-solid fa-x"></i></li>
                     <li class="nav"><a href="./index.html">Home</a></li>
                     <li class="nav"><a href="./about.html">About</a></li>
-                    <li class="nav"><a href="">Event</a></li>
-                    <li class="nav"><a href="">Partner</a></li>
-                    <li class="booktick nav"><a href="">Book Ticket(s)</a></li>
+                    <li class="nav"><a href="#event">Event</a></li>
+                    <li class="nav"><a href="#partner">Partner</a></li>
+                    <li class="booktick nav"><a href="#book">Book Ticket(s)</a></li>
                 </ul>
 
             </div>
@@ -119,153 +119,11 @@
     <div class="feature-musicians">
         <h2>Featured Musicians</h2>
         <div class="hr"></div>
-        <div class="musicians-modal">
-
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/Kane_Brown.png" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Kane Brown</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>American singer</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            Brown first came to the attention of the public through social media. After Brown signed
-                            with RCA Nashville in early 2016, released in March 2016.Brown became the first artist to
-                            have simultaneous number ones on all five main Billboard country charts.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/Chris_Stapleton.png" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Chris Stapleton</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>American singer-songwriter, guitarist, and record producer</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            Stapleton moved to Nashville, Tennessee, to pursue an engineering degree from Vanderbilt
-                            University but dropped out to pursue his career in music. Subsequently, Stapleton signed a
-                            contract with Sea Gayle Music to write and publish his music.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/dolly.png" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Dolly Parton</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>American singer-songwriter, actress, philanthropist, and businesswoman</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            After achieving success as a songwriter for others, Parton made her album debut in 1967,
-                            which led to success during the 1970s and continued into the 1980s.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/luke_combs.webp" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Luke Combs</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>American country music singer and songwriter</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            Born and raised in North Carolina, Combs began performing as a child, most notably
-                            performing at Carnegie Hall, moved to Nashville, Tennessee, where he released his debut
-                            extended play, The Way She Rides, in 2014.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/eric_chruch.jpg" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Eric Chruch</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>American country music singer-songwriter</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            He has released nine studio albums through Capitol Nashville since 2005. His debut album,
-                            2006's Sinners Like Me, produced three singles on the Billboard country charts including the
-                            top 20 hits "How 'Bout You", "Two Pink Lines", and "Guys Like Me".
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="musicians-card">
-                <div class="card-imgbg">
-                    <img class="card-img" src="images/shania_twain.webp" alt="artist display picture">
-                </div>
-                <div class="card-detail">
-                    <div class="name">
-                        <h3>Shania Twain</h3>
-                    </div>
-                    <div class="country">
-                        <p>
-                            <i>Canadian singer and songwriter</i>
-                        </p>
-                    </div>
-                    <div class="hr1"></div>
-                    <div class="description">
-                        <p>
-                            She has sold over 100 million records, making her the best-selling female artist in country
-                            music history and one of the best-selling music artists of all time. Billboard named her as
-                            the leader of the 90s country-pop crossover stars.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <button class="btn-more" type="button">MORE<i class=" fa-solid fa-angle-down"></i></button>
+        <div class="musicians-modal" id="musicians-modal">
 
         </div>
+        <button class="btn-more" id="btn-more" type="button">MORE<i class=" fa-solid fa-angle-down"></i></button>
+        <button class="btn-less" id="btn-less" type="button">LESS<i class=" fa-solid fa-angle-up"></i></button>
     </div>
     <div class="patner">
         <h1>Patner</h1>
@@ -291,6 +149,8 @@
 
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
