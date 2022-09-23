@@ -382,8 +382,6 @@ header {
   display: none;
 }
 
-
-
 /* ********************************************************** */
 @media only screen and (min-width: 768px) {
   header {
@@ -418,11 +416,6 @@ header {
   .cross {
     display: none;
   }
-
-
-  /* .menu-list {
-        display: none;
-    } */
 
   .nav-header2 {
     width: auto;
