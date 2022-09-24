@@ -15,6 +15,9 @@
 
 [Live Demo Link](https://rashidmenhas.github.io/First-Capstone/)
 
+## Presentation Video Link:
+[Loom Video](https://www.loom.com/share/6554c772593c45e7a7babe1a892dec5b)
+
 
 ## Getting Started
 git clone: https://github.com/RashidMenhas/First-Capstone.git
