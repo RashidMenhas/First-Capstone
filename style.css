@@ -1,0 +1,747 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url('images/main_big.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-header {
+  display: none;
+}
+
+.nav-header2 ul {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  background-color: #4f4f4f;
+  mix-blend-mode: multiply;
+  gap: 20px;
+  font-size: 30px;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.btn-program a {
+  text-decoration: none;
+  color: #fafafa;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.nav-header2 ul li a {
+  color: #fff;
+  z-index: 2;
+}
+
+.cross-icon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-inline-end: 40px;
+  margin-top: 40px;
+}
+
+.nav-header2 .logo {
+  display: none;
+}
+
+.nav-header2 {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.cross {
+  display: block;
+}
+
+.menu-list {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #4f4f4f;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  gap: unset;
+}
+
+.music-section {
+  padding: 30px;
+  background-image: url('images/main_big.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.heading3 {
+  font-size: 25px;
+  color: #ec5242;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.heading1 {
+  width: 372px;
+  font-size: 40px;
+  color: #ec5242;
+  padding: 18px 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.pragraph {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  border: 5px solid #fff;
+  padding: 20px 15px 12px 5px;
+  background: #fafafa;
+  color: #272a31;
+}
+
+.date-format {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #272a31;
+}
+
+.pragraph2 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #2c2828;
+}
+
+.event-cards {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150%;
+  padding-bottom: 30px;
+  align-items: center;
+  background:
+    linear-gradient(
+      to right,
+      rgba(79, 79, 79, 0.95),
+      rgba(79, 79, 79, 0.95)
+    ),
+    url(images/pattern_bg.png);
+  z-index: 0;
+}
+
+.E-Program {
+  display: flex;
+  color: #fff;
+  padding: 28px 0 16px 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.hr {
+  background-color: #ec5242;
+  height: 2px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-modal {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.card {
+  width: 335px;
+  height: 124px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(12, 11, 11, 0.192);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  display: flex;
+  filter: brightness(0) invert(1);
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  color: #ec5242;
+  text-align: center;
+  width: 110px;
+  font-size: 20px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.card-desc {
+  color: #fff;
+  padding: 20px;
+  width: 120px;
+  text-align: center;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.btn-program {
+  margin-bottom: 20px;
+  margin-top: 610px;
+  padding: 14px;
+  background: #ec5242;
+}
+
+.feature-musicians {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-musicians h2 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  padding: 0.3em 0.1em;
+  color: #272a31;
+  margin-top: 55px;
+}
+
+.musicians-modal {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: unset;
+  width: 90%;
+  height: 40%;
+  margin-top: 30px;
+}
+
+.musicians-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.hidden-card {
+  display: none;
+}
+
+.card-detail {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.card-img {
+  width: 80%;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.card-imgbg {
+  background-image: url('images/checkered_board_.png');
+  background-size: 50px;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.hr1 {
+  background-color: #ec5242;
+  width: 50px;
+  height: 2px;
+}
+
+.name {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #272a31;
+}
+
+.country {
+  color: #ec5242;
+  font-size: 12px;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.description {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #272a31;
+  font-size: 10px;
+}
+
+.btn-more {
+  width: 90%;
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+  background: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.btn-less {
+  display: none;
+  width: 90%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  justify-content: center;
+  margin-bottom: 100px;
+  background: #fff;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.fa-solid {
+  color: #ec5242;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.patner {
+  width: 100%;
+  height: auto;
+  border: 2px solid black;
+  background-color: #272a31;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+.patner h1 {
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 30px;
+}
+
+.company-logo {
+  display: flex;
+  gap: 31px;
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.c-log {
+  width: 160px;
+  height: 70px;
+}
+
+.footer {
+  display: none;
+}
+
+/* ********************************************************** */
+@media only screen and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 20px;
+    padding: 10px;
+    background: #2c2828;
+  }
+
+  .nav-header ul {
+    margin-right: 8%;
+    display: flex;
+    gap: 30px;
+  }
+
+  .nav-header a {
+    color: #fff;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .cross {
+    display: none;
+  }
+
+  .nav-header2 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+    padding-inline-start: 40px;
+    padding-inline-end: 40px;
+    justify-content: space-between;
+  }
+
+  .nav-header2 ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding-inline-end: 50px;
+    position: unset;
+    width: unset;
+    height: unset;
+    backdrop-filter: unset;
+    background-color: unset;
+    mix-blend-mode: unset;
+    font-size: unset;
+    top: unset;
+    bottom: unset;
+    z-index: unset;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-header2 .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .nav-header2 ul li {
+    font-size: 20px;
+    color: unset;
+  }
+
+  .btn-program a {
+    text-decoration: none;
+    color: #fafafa;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .nav-header2 ul li a {
+    text-decoration: none;
+    color: #4f4f4f;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-style: normal;
+  }
+
+  .booktick {
+    border: 2px solid #ec5242;
+    padding: 6px;
+    width: 373px;
+  }
+
+  .music-section {
+    padding: 30px;
+    background-image: url('images/main_big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .heading3 {
+    font-size: 40px;
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .heading1 {
+    width: 630px;
+    font-size: 50px;
+    color: #ec5242;
+    padding: 30px 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .pragraph {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    border: 5px solid #fff;
+    width: 50vw;
+    padding: 20px 15px 12px 5px;
+    background: #fafafa;
+    color: #272a31;
+  }
+
+  .date-format {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #272a31;
+  }
+
+  .pragraph2 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #2c2828;
+  }
+
+  .event-cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 30px;
+    align-items: center;
+    background:
+      linear-gradient(
+        to right,
+        rgba(79, 79, 79, 0.95),
+        rgba(79, 79, 79, 0.95)
+      ),
+      url(images/pattern_bg.png);
+  }
+
+  .E-Program {
+    display: flex;
+    color: #fff;
+    padding: 80px 0 30px 0;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .hr {
+    background-color: #ec5242;
+    height: 2px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-modal {
+    width: 90%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .card {
+    width: 190px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(12, 11, 11, 0.192);
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-top: 30px;
+    filter: brightness(0) invert(1);
+  }
+
+  .card-title {
+    display: flex;
+    flex-direction: column;
+    color: #ec5242;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .card-desc {
+    color: #fff;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .btn-program {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .feature-musicians {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-musicians h2 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0.3em 0.1em;
+    color: #272a31;
+    margin-top: 50px;
+  }
+
+  .musicians-modal {
+    display: flex;
+    flex-direction: unset;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 40%;
+    margin-top: 30px;
+  }
+
+  .musicians-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .card-detail {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-img {
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .card-imgbg {
+    background-image: url('images/checkered_board_.png');
+    background-size: 50px;
+    background-repeat: no-repeat;
+    width: 30%;
+  }
+
+  .hr1 {
+    background-color: #ec5242;
+    width: 50px;
+    height: 2px;
+  }
+
+  .name {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #272a31;
+  }
+
+  .country {
+    color: #ec5242;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .description {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #272a31;
+  }
+
+  .btn-more {
+    display: none;
+  }
+
+  .patner {
+    width: 100%;
+    height: 40vh;
+    border: 2px solid black;
+    background-color: #272a31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .patner h1 {
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 30px;
+  }
+
+  .company-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    margin-top: 20px;
+  }
+
+  .c-log {
+    width: 160px;
+    height: 70px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-img {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 80px;
+  }
+
+  .par {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 0 100px;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+  }
+
+  .btn-less {
+    display: none;
+  }
+}
